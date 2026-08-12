@@ -1,0 +1,75 @@
+# Handwritten Digit Recognition using Logistic Regression
+
+## 1. Objective
+
+The objective of this project is to build a handwritten digit classifier using Logistic Regression. The classifier is trained on the built-in scikit-learn digits dataset and evaluated using training accuracy and testing accuracy. Correctly and incorrectly classified digit images are also visualized.
+
+---
+
+## 2. Dataset
+
+The project uses the built-in `load_digits()` dataset available in scikit-learn.
+
+Dataset Characteristics:
+
+* Number of Samples: 1,797
+* Image Size: 8 × 8 pixels
+* Number of Features: 64
+* Number of Classes: 10 (Digits 0–9)
+
+---
+
+## 3. Libraries Used
+
+* scikit-learn
+* matplotlib
+
+---
+
+## 4. Methodology
+
+The following steps were performed:
+
+1. Loaded the digits dataset.
+2. Split the dataset into training and testing sets.
+3. Trained a Logistic Regression classifier.
+4. Predicted the labels of the test set.
+5. Calculated training accuracy and testing accuracy.
+6. Visualized five correctly classified digits.
+7. Visualized five incorrectly classified digits.
+
+---
+
+## 5. Evaluation
+
+The following metrics were recorded:
+
+* Training Accuracy
+* Testing Accuracy
+
+Both values indicate how well the classifier performs on seen and unseen data.
+
+---
+
+## 6. Observations
+
+* Most handwritten digits are correctly classified.
+* Incorrect predictions generally occur for digits with similar handwritten shapes (for example, 3 vs 5 or 8 vs 9).
+* Logistic Regression performs well on this dataset despite being a simple linear classifier.
+
+---
+
+## 7. Output Files
+
+The program generates:
+
+* correct_predictions.png
+* incorrect_predictions.png
+* observations.txt
+
+---
+
+## 8. Conclusion
+
+The Logistic Regression classifier successfully recognizes handwritten digits with high accuracy. The visualization of correct and incorrect predictions helps understand the strengths and limitations of the model.
+

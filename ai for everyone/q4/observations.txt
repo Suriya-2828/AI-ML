@@ -1,0 +1,4 @@
+MNIST Digit Recognition
+
+Training Accuracy : 100.00%
+Testing Accuracy : 95.83%
