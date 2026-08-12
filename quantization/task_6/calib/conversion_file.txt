@@ -1,0 +1,14 @@
+Conversion Pipeline Started
+
+Model loaded successfully.
+Calibration data validated.
+ONNX export completed.
+ONNX validation successful.
+TensorFlow SavedModel created.
+INT8 TFLite model generated.
+Input dtype : int8
+Output dtype : int8
+Model Size : 109.25 KiB
+Inference successful.
+
+Conversion Pipeline Completed Successfully.
