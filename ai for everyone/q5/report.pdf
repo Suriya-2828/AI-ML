@@ -1,0 +1,164 @@
+# Heart Disease Prediction using Machine Learning
+
+## 1. Objective
+
+The objective of this project is to build a machine learning model that predicts whether a patient has heart disease. The project demonstrates the complete machine learning workflow, including Exploratory Data Analysis (EDA), Data Cleaning, Feature Engineering, Model Training, Model Evaluation, and Model Comparison.
+
+---
+
+## 2. Dataset
+
+**Dataset Name:** Heart Disease Dataset (UCI)
+
+The dataset contains patient medical information such as:
+
+* Age
+* Gender
+* Chest Pain Type
+* Resting Blood Pressure
+* Cholesterol
+* Fasting Blood Sugar
+* ECG Results
+* Maximum Heart Rate
+* Exercise Induced Angina
+* ST Depression
+* Slope of ST Segment
+* Number of Major Vessels
+* Thalassemia
+* Heart Disease Severity
+
+The original target column is **num**, where:
+
+* 0 = No Heart Disease
+* 1–4 = Presence of Heart Disease
+
+For binary classification, the target was converted as:
+
+* 0 → No Heart Disease
+* 1 → Heart Disease
+
+---
+
+## 3. Tools and Libraries Used
+
+* Python 3.11+
+* Pandas
+* Matplotlib
+* Scikit-learn
+
+---
+
+## 4. Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis was performed to understand the dataset before model training.
+
+The following analyses were performed:
+
+* Displayed the first five records.
+* Checked the dataset dimensions.
+* Displayed column information.
+* Identified missing values.
+* Generated summary statistics.
+
+The following visualizations were created:
+
+* Age Distribution
+* Heart Disease Distribution
+* Gender Distribution
+
+These visualizations helped understand the characteristics of the dataset.
+
+---
+
+## 5. Data Cleaning
+
+The following preprocessing steps were performed:
+
+* Removed duplicate records.
+* Filled missing numerical values using the median.
+* Filled missing categorical values using the mode.
+* Saved the cleaned dataset as **cleaned_heart.csv**.
+
+These steps ensured that the dataset was suitable for machine learning.
+
+---
+
+## 6. Feature Engineering
+
+Several preprocessing operations were performed before training the models.
+
+* Converted categorical columns into numerical values using Label Encoding.
+* Converted the target column (**num**) into a binary target (**HeartDisease**).
+* Removed unnecessary columns such as **id** and **num**.
+
+These transformations prepared the dataset for machine learning algorithms.
+
+---
+
+## 7. Machine Learning Models
+
+Two supervised learning algorithms were trained and evaluated.
+
+### Logistic Regression
+
+Logistic Regression is a linear classification algorithm used for binary classification problems. It is simple, interpretable, and performs well on many datasets.
+
+### Random Forest
+
+Random Forest is an ensemble learning algorithm that combines multiple decision trees. It generally provides better prediction accuracy and handles complex relationships between features.
+
+---
+
+## 8. Model Evaluation
+
+Both models were evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+
+The evaluation metrics were saved in the file:
+
+**evaluation_metrics.txt**
+
+A comparison chart was also generated to compare the accuracy of both models.
+
+---
+
+## 9. Model Comparison
+
+The comparison graph displays the accuracy of:
+
+* Logistic Regression
+* Random Forest
+
+The graph helps determine which model performs better on the test dataset.
+
+---
+
+## 10. Deployment Recommendation
+
+The model with the higher testing accuracy is recommended for deployment.
+
+In most executions of this dataset, the Random Forest classifier provides better prediction accuracy than Logistic Regression because it can model more complex relationships between the input features.
+
+---
+
+## 11. Output Files Generated
+
+The project automatically generates the following files:
+
+* cleaned_heart.csv
+* age_distribution.png
+* target_distribution.png
+* gender_distribution.png
+* model_comparison.png
+* evaluation_metrics.txt
+
+---
+
+## 12. Conclusion
+
+This project successfully demonstrates the complete machine learning workflow for heart disease prediction. Exploratory Data Analysis was performed to understand the dataset, followed by data cleaning and feature engineering. Logistic Regression and Random Forest models were trained and evaluated. Their performances were compared, and the model with the higher test accuracy was recommended for deployment. This project provides a practical example of applying machine learning techniques to a real-world healthcare dataset.
+
