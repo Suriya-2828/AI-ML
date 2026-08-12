@@ -1,0 +1,92 @@
+# Iris Flower Classification using Decision Tree
+
+## 1. Objective
+
+The objective of this project is to classify Iris flower species using a Decision Tree classifier. The dataset is divided into training and testing sets, and the model is evaluated using accuracy, a confusion matrix, and a classification report.
+
+---
+
+## 2. Dataset
+
+The Iris dataset is a built-in dataset available in the scikit-learn library.
+
+Dataset characteristics:
+
+* Number of Samples: 150
+* Number of Features: 4
+* Number of Classes: 3
+
+Classes:
+
+* Setosa
+* Versicolor
+* Virginica
+
+Features:
+
+* Sepal Length
+* Sepal Width
+* Petal Length
+* Petal Width
+
+---
+
+## 3. Libraries Used
+
+* scikit-learn
+* matplotlib
+
+---
+
+## 4. Methodology
+
+The following steps were performed:
+
+1. Loaded the Iris dataset.
+2. Split the dataset into training (80%) and testing (20%) sets.
+3. Trained a Decision Tree classifier.
+4. Predicted the test data.
+5. Calculated model accuracy.
+6. Generated a confusion matrix.
+7. Generated a classification report.
+
+---
+
+## 5. Evaluation Metrics
+
+The model evaluation includes:
+
+* Accuracy Score
+* Confusion Matrix
+* Precision
+* Recall
+* F1-Score
+
+The confusion matrix provides a comparison between actual and predicted classes.
+
+---
+
+## 6. Confusion Matrix Explanation
+
+A confusion matrix summarizes the prediction results of the classifier.
+
+* The diagonal values represent correctly classified samples.
+* The off-diagonal values represent misclassified samples.
+
+If most values appear on the diagonal, the model is performing well.
+
+---
+
+## 7. Output Files
+
+The program generates:
+
+* evaluation_metrics.txt
+* confusion_matrix.png
+
+---
+
+## 8. Conclusion
+
+The Decision Tree classifier successfully classifies Iris flowers into three species. The confusion matrix and classification report indicate the model's prediction performance, while the accuracy score summarizes the overall effectiveness of the classifier.
+
